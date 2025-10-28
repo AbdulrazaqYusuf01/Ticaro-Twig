@@ -1,6 +1,6 @@
 {
-  "name": "ticketflow/twig-app",
-  "description": "TicketFlow - Ticket Management System with Twig",
+  "name": "ticaro/twig-app",
+  "description": "Ticaro - Ticket Management System with Twig",
   "type": "project",
   "require": {
     "php": "^8.1",

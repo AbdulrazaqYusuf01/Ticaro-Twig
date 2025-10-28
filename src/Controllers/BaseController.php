@@ -10,7 +10,7 @@ class BaseController
     {
         $this->twig = $twig;
         
-        // Start session if not already started
+        
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }
@@ -18,11 +18,11 @@ class BaseController
 
     protected function render($template, $data = [])
     {
-        // Add global data available to all templates
+       
         $data['user'] = $_SESSION['user'] ?? null;
         $data['flash'] = $_SESSION['flash'] ?? [];
         
-        // Clear flash messages after displaying
+       
         unset($_SESSION['flash']);
         
         return $this->twig->render($template, $data);

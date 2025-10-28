@@ -11,12 +11,10 @@ class Database
     {
         $this->storagePath = __DIR__ . '/../../storage/';
         
-        // Create storage directory if it doesn't exist
-        if (!is_dir($this->storagePath)) {
+            if (!is_dir($this->storagePath)) {
             mkdir($this->storagePath, 0777, true);
         }
-        
-        // Initialize empty files if they don't exist
+                
         $this->initializeStorage();
     }
 
@@ -39,7 +37,7 @@ class Database
             }
         }
         
-        // Initialize default tickets
+      
         $ticketsFile = $this->storagePath . 'tickets.json';
         $tickets = json_decode(file_get_contents($ticketsFile), true);
         

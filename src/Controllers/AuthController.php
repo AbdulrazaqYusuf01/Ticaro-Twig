@@ -46,7 +46,7 @@ class AuthController extends BaseController
                 $this->setFlash('success', 'Login successful!');
                 $this->redirect('/dashboard');
             } else {
-                $errors['general'] = 'Invalid credentials. Try demo@ticketflow.com / demo123';
+                $errors['general'] = 'Invalid credentials. Try demo@ticaro.com / demo123';
             }
         }
         

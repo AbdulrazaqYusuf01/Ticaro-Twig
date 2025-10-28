@@ -7,21 +7,18 @@ use App\Controllers\AuthController;
 use App\Controllers\DashboardController;
 use App\Controllers\TicketController;
 
-// Initialize Twig
 $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/../templates');
 $twig = new \Twig\Environment($loader, [
-    'cache' => false, // Disable cache for development
+    'cache' => false, 
     'debug' => true
 ]);
 
-// Add debug extension
+
 $twig->addExtension(new \Twig\Extension\DebugExtension());
 
-// Simple routing
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $method = $_SERVER['REQUEST_METHOD'];
 
-// Route handling
 try {
     if ($uri === '/' && $method === 'GET') {
         $controller = new HomeController($twig);

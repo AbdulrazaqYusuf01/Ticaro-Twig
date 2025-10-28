@@ -1,162 +1,146 @@
 [
-  {
-    "id": 1,
-    "title": "Login form validation error",
-    "description": "Email validation fails even when the format is correct.",
-    "status": "open",
-    "priority": "high",
-    "created_at": "2025-10-20T09:15:00"
-  },
-  {
-    "id": 2,
-    "title": "Unable to reset password",
-    "description": "Password reset link sends a 404 error.",
-    "status": "in-progress",
-    "priority": "medium",
-    "created_at": "2025-10-20T11:45:00"
-  },
-  {
-    "id": 3,
-    "title": "Broken image links on dashboard",
-    "description": "Several user avatars fail to load on the admin dashboard.",
-    "status": "closed",
-    "priority": "low",
-    "created_at": "2025-10-21T10:00:00"
-  },
-  {
-    "id": 4,
-    "title": "Performance issue in ticket search",
-    "description": "Search results take more than 10 seconds to load.",
-    "status": "open",
-    "priority": "high",
-    "created_at": "2025-10-21T13:20:00"
-  },
-  {
-    "id": 5,
-    "title": "Dark mode toggle not persisting",
-    "description": "Dark mode resets to light mode after page refresh.",
-    "status": "in-progress",
-    "priority": "medium",
-    "created_at": "2025-10-22T09:00:00"
-  },
-  {
-    "id": 6,
-    "title": "Pagination not working on ticket list",
-    "description": "Next and previous buttons do not load new pages.",
-    "status": "open",
-    "priority": "high",
-    "created_at": "2025-10-22T11:45:00"
-  },
-  {
-    "id": 7,
-    "title": "Notification dropdown overlap",
-    "description": "Dropdown overlaps other UI elements on smaller screens.",
-    "status": "in-progress",
-    "priority": "low",
-    "created_at": "2025-10-22T15:00:00"
-  },
-  {
-    "id": 8,
-    "title": "Mobile responsiveness issue on ticket detail page",
-    "description": "Ticket description overflows on smaller devices.",
-    "status": "open",
-    "priority": "medium",
-    "created_at": "2025-10-23T08:30:00"
-  },
-  {
-    "id": 9,
-    "title": "Search filter not combining properly",
-    "description": "Status and priority filters produce wrong results when combined.",
-    "status": "in-progress",
-    "priority": "high",
-    "created_at": "2025-10-23T10:10:00"
-  },
-  {
-    "id": 10,
-    "title": "Date format inconsistency",
-    "description": "Dates show different formats across pages.",
-    "status": "open",
-    "priority": "low",
-    "created_at": "2025-10-23T13:45:00"
-  },
-  {
-    "id": 11,
-    "title": "Attachment upload failing",
-    "description": "File uploads return 'Server error' on submission.",
-    "status": "in-progress",
-    "priority": "high",
-    "created_at": "2025-10-24T09:05:00"
-  },
-  {
-    "id": 12,
-    "title": "Ticket comments not saving",
-    "description": "Adding a comment doesn't update the comments section.",
-    "status": "open",
-    "priority": "high",
-    "created_at": "2025-10-24T12:25:00"
-  },
-  {
-    "id": 13,
-    "title": "User session timing out too quickly",
-    "description": "User gets logged out after only 5 minutes of inactivity.",
-    "status": "open",
-    "priority": "medium",
-    "created_at": "2025-10-25T10:40:00"
-  },
-  {
-    "id": 14,
-    "title": "Ticket deletion confirmation missing",
-    "description": "Tickets are deleted instantly without confirmation modal.",
-    "status": "closed",
-    "priority": "medium",
-    "created_at": "2025-10-25T13:15:00"
-  },
-  {
-    "id": 15,
-    "title": "Sorting by priority not working",
-    "description": "Clicking on the 'Priority' column header does nothing.",
-    "status": "open",
-    "priority": "low",
-    "created_at": "2025-10-25T15:00:00"
-  },
-  {
-    "id": 16,
-    "title": "Duplicate ticket titles allowed",
-    "description": "System should prevent multiple tickets with identical titles.",
-    "status": "in-progress",
-    "priority": "medium",
-    "created_at": "2025-10-26T09:00:00"
-  },
-  {
-    "id": 17,
-    "title": "Ticket assignment not updating",
-    "description": "Assigned agent doesn't change after update request.",
-    "status": "open",
-    "priority": "high",
-    "created_at": "2025-10-26T11:30:00"
-  },
-  {
-    "id": 18,
-    "title": "Export to CSV generating empty file",
-    "description": "Export button creates a blank CSV document.",
-    "status": "in-progress",
-    "priority": "medium",
-    "created_at": "2025-10-26T14:10:00"
-  },
-  {
-    "id": 19,
-    "title": "User profile picture not updating",
-    "description": "Profile picture upload shows success but doesn't change.",
-    "status": "open",
-    "priority": "low",
-    "created_at": "2025-10-27T08:25:00"
-  },
-  {
-    "id": 20,
-    "title": "Dashboard statistics incorrect",
-    "description": "Open ticket count does not match actual data.",
-    "status": "in-progress",
-    "priority": "high",
-    "created_at": "2025-10-27T12:00:00"
-  }
+    {
+        "id": 1,
+        "title": "Login form validation error",
+        "description": "Email validation fails even when the format is correct.",
+        "status": "open",
+        "priority": "high",
+        "created_at": "2025-10-20T09:15:00"
+    },
+    {
+        "id": 2,
+        "title": "Unable to reset password",
+        "description": "Password reset link sends a 404 error.",
+        "status": "in_progress",
+        "priority": "medium",
+        "created_at": "2025-10-20T11:45:00"
+    },
+    {
+        "id": 3,
+        "title": "Broken image links on dashboard",
+        "description": "Several user avatars fail to load on the admin dashboard.",
+        "status": "closed",
+        "priority": "low",
+        "created_at": "2025-10-21T10:00:00"
+    },
+    {
+        "id": 4,
+        "title": "Performance issue in ticket search",
+        "description": "Search results take more than 10 seconds to load.",
+        "status": "open",
+        "priority": "high",
+        "created_at": "2025-10-21T13:20:00"
+    },
+    {
+        "id": 5,
+        "title": "Dark mode toggle not persisting",
+        "description": "Dark mode resets to light mode after page refresh.",
+        "status": "in_progress",
+        "priority": "medium",
+        "created_at": "2025-10-22T09:00:00"
+    },
+    {
+        "id": 8,
+        "title": "Mobile responsiveness issue on ticket detail page",
+        "description": "Ticket description overflows on smaller devices.",
+        "status": "open",
+        "priority": "medium",
+        "created_at": "2025-10-23T08:30:00"
+    },
+    {
+        "id": 9,
+        "title": "Search filter not combining properly",
+        "description": "Status and priority filters produce wrong results when combined.",
+        "status": "in_progress",
+        "priority": "high",
+        "created_at": "2025-10-23T10:10:00"
+    },
+    {
+        "id": 10,
+        "title": "Date format inconsistency",
+        "description": "Dates show different formats across pages.",
+        "status": "open",
+        "priority": "low",
+        "created_at": "2025-10-23T13:45:00"
+    },
+    {
+        "id": 11,
+        "title": "Attachment upload failing",
+        "description": "File uploads return 'Server error' on submission.",
+        "status": "in_progress",
+        "priority": "high",
+        "created_at": "2025-10-24T09:05:00"
+    },
+    {
+        "id": 12,
+        "title": "Ticket comments not saving",
+        "description": "Adding a comment doesn't update the comments section.",
+        "status": "open",
+        "priority": "high",
+        "created_at": "2025-10-24T12:25:00"
+    },
+    {
+        "id": 13,
+        "title": "User session timing out too quickly",
+        "description": "User gets logged out after only 5 minutes of inactivity.",
+        "status": "open",
+        "priority": "medium",
+        "created_at": "2025-10-25T10:40:00"
+    },
+    {
+        "id": 14,
+        "title": "Ticket deletion confirmation missing",
+        "description": "Tickets are deleted instantly without confirmation modal.",
+        "status": "closed",
+        "priority": "medium",
+        "created_at": "2025-10-25T13:15:00"
+    },
+    {
+        "id": 15,
+        "title": "Sorting by priority not working",
+        "description": "Clicking on the 'Priority' column header does nothing.",
+        "status": "open",
+        "priority": "low",
+        "created_at": "2025-10-25T15:00:00"
+    },
+    {
+        "id": 16,
+        "title": "Duplicate ticket titles allowed",
+        "description": "System should prevent multiple tickets with identical titles.",
+        "status": "in_progress",
+        "priority": "medium",
+        "created_at": "2025-10-26T09:00:00"
+    },
+    {
+        "id": 17,
+        "title": "Ticket assignment not updating",
+        "description": "Assigned agent doesn't change after update request.",
+        "status": "open",
+        "priority": "high",
+        "created_at": "2025-10-26T11:30:00"
+    },
+    {
+        "id": 18,
+        "title": "Export to CSV generating empty file",
+        "description": "Export button creates a blank CSV document.",
+        "status": "in_progress",
+        "priority": "medium",
+        "created_at": "2025-10-26T14:10:00"
+    },
+    {
+        "id": 19,
+        "title": "User profile picture not updating",
+        "description": "Profile picture upload shows success but doesn't change.",
+        "status": "open",
+        "priority": "low",
+        "created_at": "2025-10-27T08:25:00"
+    },
+    {
+        "id": 20,
+        "title": "Dashboard statistics incorrect",
+        "description": "Open ticket count does not match actual data.",
+        "status": "in_progress",
+        "priority": "high",
+        "created_at": "2025-10-27T12:00:00"
+    }
 ]

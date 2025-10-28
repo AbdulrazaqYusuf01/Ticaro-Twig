@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}TicketFlow - Ticket Management System{% endblock %}</title>
-    
-    {# Tailwind CSS CDN #}
+    <title>{% block title %}Ticaro - Ticket Management System{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    {# Google Fonts #}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -50,7 +46,6 @@
 <body>
     {% include 'components/header.html.twig' %}
     
-    {# Flash Messages #}
     {% if flash %}
         {% for message in flash %}
             <div class="fixed top-4 right-4 z-50 animate-slide-in flash-message">
@@ -80,7 +75,6 @@
     {% include 'components/footer.html.twig' %}
     
     <script>
-        // Auto-hide flash messages
         setTimeout(() => {
             document.querySelectorAll('.flash-message').forEach(el => {
                 el.style.opacity = '0';
@@ -89,7 +83,6 @@
             });
         }, 4000);
         
-        // Mobile menu toggle
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');

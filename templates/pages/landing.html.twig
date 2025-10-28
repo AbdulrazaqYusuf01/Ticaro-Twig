@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TicketFlow - Streamline Your Support{% endblock %}
+
+{% block body %}
+<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
+    {# Hero Section #}
+    <section class="relative overflow-hidden bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="max-w-[1440px] mx-auto px-6 py-20 md:py-32 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Streamline Your Support with TicketFlow
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-indigo-100">
+                    Manage, track, and resolve customer tickets efficiently. Built for teams that care about exceptional support.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="/signup" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50 transition-colors">
+                        Get Started
+                    </a>
+                    <a href="/login" class="bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-800 transition-colors border-2 border-indigo-500">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        {# Decorative Elements #}
+        <div class="absolute top-20 right-10 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl"></div>
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-purple-400 opacity-20 rounded-full"></div>
+        
+        {# Wavy SVG Background #}
+        <svg class="absolute bottom-0 w-full" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="#F0F4FF"/>
+        </svg>
+    </section>
+
+    {# Features Section #}
+    <section class="max-w-[1440px] mx-auto px-6 py-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+            Everything You Need to Manage Tickets
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            {% include 'partials/feature_card.html.twig' with {
+                'title': 'Real-time Tracking',
+                'description': 'Monitor ticket status in real-time with instant updates and notifications.',
+                'gradient': 'from-blue-500 to-cyan-500'
+            } %}
+            
+            {% include 'partials/feature_card.html.twig' with {
+                'title': 'Smart Organization',
+                'description': 'Categorize and prioritize tickets with flexible status management.',
+                'gradient': 'from-purple-500 to-pink-500'
+            } %}
+            
+            {% include 'partials/feature_card.html.twig' with {
+                'title': 'Seamless Workflow',
+                'description': 'Create, update, and resolve tickets with an intuitive interface.',
+                'gradient': 'from-orange-500 to-red-500'
+            } %}
+        </div>
+    </section>
+
+    {# Stats Section #}
+    <section class="relative bg-gradient-to-br from-indigo-100 to-purple-100 py-20">
+        <div class="absolute top-10 left-10 w-48 h-48 bg-indigo-300 opacity-30 rounded-full blur-2xl"></div>
+        <div class="max-w-[1440px] mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-3 gap-8">
+                {% include 'partials/stat_box.html.twig' with {'number': '10K+', 'label': 'Tickets Resolved'} %}
+                {% include 'partials/stat_box.html.twig' with {'number': '500+', 'label': 'Happy Teams'} %}
+                {% include 'partials/stat_box.html.twig' with {'number': '99.9%', 'label': 'Uptime'} %}
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

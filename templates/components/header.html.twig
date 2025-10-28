@@ -1,0 +1,55 @@
+<header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-[1440px] mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold text-indigo-600">
+                TicketFlow
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-6">
+                {% if user %}
+                    <a href="/dashboard" class="text-gray-700 hover:text-indigo-600">
+                        Dashboard
+                    </a>
+                    <a href="/tickets" class="text-gray-700 hover:text-indigo-600">
+                        Tickets
+                    </a>
+                    <a href="/logout" class="flex items-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                        </svg>
+                        Logout
+                    </a>
+                {% else %}
+                    <a href="/login" class="text-gray-700 hover:text-indigo-600">
+                        Login
+                    </a>
+                    <a href="/signup" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">
+                        Sign Up
+                    </a>
+                {% endif %}
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-3 pb-4">
+            {% if user %}
+                <a href="/dashboard" class="text-gray-700 hover:text-indigo-600 py-2">Dashboard</a>
+                <a href="/tickets" class="text-gray-700 hover:text-indigo-600 py-2">Tickets</a>
+                <a href="/logout" class="flex items-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 w-full justify-center">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                    </svg>
+                    Logout
+                </a>
+            {% else %}
+                <a href="/login" class="text-gray-700 hover:text-indigo-600 py-2">Login</a>
+                <a href="/signup" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 text-center">Sign Up</a>
+            {% endif %}
+        </nav>
+    </div>
+</header>

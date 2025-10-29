@@ -12,10 +12,10 @@
 
         <div class="grid md:grid-cols-4 gap-6 mb-12">
             {% set stats_data = [
-                {'title': 'Total Tickets', 'value': stats.total, 'gradient': 'from-indigo-500 to-purple-500'},
-                {'title': 'Open', 'value': stats.open, 'gradient': 'from-green-500 to-emerald-500'},
-                {'title': 'In Progress', 'value': stats.in_progress, 'gradient': 'from-amber-500 to-orange-500'},
-                {'title': 'Closed', 'value': stats.closed, 'gradient': 'from-gray-500 to-slate-500'}
+                {'title': 'Total Tickets', 'value': stats.total, 'gradient': 'from-indigo-500 to-indigo-500'},
+                {'title': 'Open', 'value': stats.open, 'gradient': 'from-emerald-500 to-emerald-500'},
+                {'title': 'In Progress', 'value': stats.in_progress, 'gradient': 'from-amber-500 to-amber-500'},
+                {'title': 'Closed', 'value': stats.closed, 'gradient': 'from-slate-500 to-slate-500'}
             ] %}
             
             {% for stat in stats_data %}
